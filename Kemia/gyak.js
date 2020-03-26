@@ -81,12 +81,11 @@ function myFunction(that) {
             }
         }
         szamolMap.set(ev, ++db);
-        //console.log(szamolMap.size);
     }
 
     kiir += `<p>7. Feladat: ${max} év volt a leghosszabb időszak két elem felfedezése között.</p>`;
     kiir += '<p>8. Feladat: Statisztika</p>';
-    
+
     kiir += '<pre>';
     for (const elem of szamolMap) {
         if (elem[1] >= 4 && elem[0] != 'Ókor') {
